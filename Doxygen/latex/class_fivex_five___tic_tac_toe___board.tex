@@ -1,0 +1,242 @@
+\doxysection{Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board Class Reference}
+\hypertarget{class_fivex_five___tic_tac_toe___board}{}\label{class_fivex_five___tic_tac_toe___board}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+
+
+Represents a 5x5 board. Game ends when full. Winner has most 3-\/in-\/a-\/row sequences.  
+
+
+
+
+{\ttfamily \#include $<$Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board.\+h$>$}
+
+
+
+Inheritance diagram for Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_fivex_five___tic_tac_toe___board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=189pt]{class_fivex_five___tic_tac_toe___board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fivex_five___tic_tac_toe___board_a7a13a22c84eedd6c4bffe1f695a64627}{Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialize the 5x5 board. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fivex_five___tic_tac_toe___board_afd123ea7592d89b396c97c5a7e2a753b}{update\+\_\+board}} (\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}move) override
+\begin{DoxyCompactList}\small\item\em Updates the board with the player\textquotesingle{}s move. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fivex_five___tic_tac_toe___board_ac2019f31e6b96999e42adbf5b7a85bd6}{is\+\_\+win}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the player wins (by having more 3-\/in-\/a-\/row sequences). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fivex_five___tic_tac_toe___board_af44b88b7235a3e6a727261ee0f800ef5}{is\+\_\+lose}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the player loses. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fivex_five___tic_tac_toe___board_a7d52e670ab77f7e273556cb193f7b007}{is\+\_\+draw}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks for a draw (equal scores when board is full). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fivex_five___tic_tac_toe___board_a30ad0a04cf71e4af9993f2e2a5957f6c}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the game is over (board is full). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_fivex_five___tic_tac_toe___board_a9e166f6aa98bd5d1eb54533bc07fe027}{count\+\_\+three\+\_\+in\+\_\+a\+\_\+row}} (char symbol) const
+\begin{DoxyCompactList}\small\item\em Counts occurrences of 3 consecutive symbols. \end{DoxyCompactList}\item 
+pair$<$ int, int $>$ \mbox{\hyperlink{class_fivex_five___tic_tac_toe___board_aa86dcbabf1ce9b30d06a7cc93a05ad66}{get\+\_\+best\+\_\+move}} (char symbol)
+\begin{DoxyCompactList}\small\item\em Calculates the best move for the AI using a greedy strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}, int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_board_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () const
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () const
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_board_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a 5x5 board. Game ends when full. Winner has most 3-\/in-\/a-\/row sequences. 
+
+\label{doc-constructors}
+\Hypertarget{class_fivex_five___tic_tac_toe___board_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_fivex_five___tic_tac_toe___board_a7a13a22c84eedd6c4bffe1f695a64627}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{FivexFive\_TicTacToe\_Board()}{FivexFive\_TicTacToe\_Board()}}
+{\footnotesize\ttfamily \label{class_fivex_five___tic_tac_toe___board_a7a13a22c84eedd6c4bffe1f695a64627} 
+Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::\+Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor to initialize the 5x5 board. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_fivex_five___tic_tac_toe___board_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_fivex_five___tic_tac_toe___board_a9e166f6aa98bd5d1eb54533bc07fe027}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!count\_three\_in\_a\_row@{count\_three\_in\_a\_row}}
+\index{count\_three\_in\_a\_row@{count\_three\_in\_a\_row}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{count\_three\_in\_a\_row()}{count\_three\_in\_a\_row()}}
+{\footnotesize\ttfamily \label{class_fivex_five___tic_tac_toe___board_a9e166f6aa98bd5d1eb54533bc07fe027} 
+int Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::count\+\_\+three\+\_\+in\+\_\+a\+\_\+row (\begin{DoxyParamCaption}\item[{char}]{symbol}{}\end{DoxyParamCaption}) const}
+
+
+
+Counts occurrences of 3 consecutive symbols. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & The player\textquotesingle{}s symbol (X or O). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Number of 3-\/in-\/a-\/row sequences. 
+\end{DoxyReturn}
+\Hypertarget{class_fivex_five___tic_tac_toe___board_a30ad0a04cf71e4af9993f2e2a5957f6c}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \label{class_fivex_five___tic_tac_toe___board_a30ad0a04cf71e4af9993f2e2a5957f6c} 
+bool Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the game is over (board is full). 
+
+\begin{DoxyReturn}{Returns}
+True if board is full (25 moves). 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+\Hypertarget{class_fivex_five___tic_tac_toe___board_aa86dcbabf1ce9b30d06a7cc93a05ad66}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!get\_best\_move@{get\_best\_move}}
+\index{get\_best\_move@{get\_best\_move}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{get\_best\_move()}{get\_best\_move()}}
+{\footnotesize\ttfamily \label{class_fivex_five___tic_tac_toe___board_aa86dcbabf1ce9b30d06a7cc93a05ad66} 
+pair$<$ int, int $>$ Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::get\+\_\+best\+\_\+move (\begin{DoxyParamCaption}\item[{char}]{symbol}{}\end{DoxyParamCaption})}
+
+
+
+Calculates the best move for the AI using a greedy strategy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & The AI player\textquotesingle{}s symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pair containing the best \{row, col\}. 
+\end{DoxyReturn}
+\Hypertarget{class_fivex_five___tic_tac_toe___board_a7d52e670ab77f7e273556cb193f7b007}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \label{class_fivex_five___tic_tac_toe___board_a7d52e670ab77f7e273556cb193f7b007} 
+bool Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks for a draw (equal scores when board is full). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if draw. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+\Hypertarget{class_fivex_five___tic_tac_toe___board_af44b88b7235a3e6a727261ee0f800ef5}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \label{class_fivex_five___tic_tac_toe___board_af44b88b7235a3e6a727261ee0f800ef5} 
+bool Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the player loses. 
+
+\begin{DoxyReturn}{Returns}
+Always false for this game. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+\Hypertarget{class_fivex_five___tic_tac_toe___board_ac2019f31e6b96999e42adbf5b7a85bd6}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \label{class_fivex_five___tic_tac_toe___board_ac2019f31e6b96999e42adbf5b7a85bd6} 
+bool Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the player wins (by having more 3-\/in-\/a-\/row sequences). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if player has higher score than opponent. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+\Hypertarget{class_fivex_five___tic_tac_toe___board_afd123ea7592d89b396c97c5a7e2a753b}\index{FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!FivexFive\_TicTacToe\_Board@{FivexFive\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \label{class_fivex_five___tic_tac_toe___board_afd123ea7592d89b396c97c5a7e2a753b} 
+bool Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{move}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the board with the player\textquotesingle{}s move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & The move to be executed. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if valid, False otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_fivex_five___tic_tac_toe___board_8h}{Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board.\+h}}\item 
+\mbox{\hyperlink{_fivex_five___tic_tac_toe___board_8cpp}{Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board.\+cpp}}\end{DoxyCompactItemize}

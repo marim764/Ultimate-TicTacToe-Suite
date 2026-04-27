@@ -1,0 +1,297 @@
+\doxysection{Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board Class Reference}
+\hypertarget{class_numerical___tic_tac_toe___board}{}\label{class_numerical___tic_tac_toe___board}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+
+
+Represents a 3x3 board for Numerical Tic-\/\+Tac-\/\+Toe. \doxylink{class_player}{Player} 1 uses odd numbers, \doxylink{class_player}{Player} 2 uses even numbers. Win condition\+: Sum of line equals 15.  
+
+
+
+
+{\ttfamily \#include $<$Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board.\+h$>$}
+
+
+
+Inheritance diagram for Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_numerical___tic_tac_toe___board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{class_numerical___tic_tac_toe___board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_numerical___tic_tac_toe___board_a19c1f07dc43c4388ccc37c0f8fd04c84}{Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructor to initialize 3x3 board with zeros. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_numerical___tic_tac_toe___board_a9a955eaa658645cfece03f1a25b42385}{update\+\_\+board}} (\mbox{\hyperlink{class_move}{Move}}$<$ int $>$ \texorpdfstring{$\ast$}{*}move) override
+\begin{DoxyCompactList}\small\item\em Updates the board with the player\textquotesingle{}s move. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_numerical___tic_tac_toe___board_ab927e8e88c22820e3b12f0e8ca1139b1}{is\+\_\+win}} (\mbox{\hyperlink{class_player}{Player}}$<$ int $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the player wins (sum of line is 15). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_numerical___tic_tac_toe___board_ab87a2982e563754c9f8a1b90a94e3a70}{is\+\_\+lose}} (\mbox{\hyperlink{class_player}{Player}}$<$ int $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the player loses (if opponent has winning line). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_numerical___tic_tac_toe___board_a0361d2ad31b8c62c290593e2d203b856}{is\+\_\+draw}} (\mbox{\hyperlink{class_player}{Player}}$<$ int $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks for a draw. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_numerical___tic_tac_toe___board_ad13b2a16d418c42f17ccc8c150c6ad7f}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{class_player}{Player}}$<$ int $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if game is over (win, lose, or draw). \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{class_numerical___tic_tac_toe___board_a7021f97f6216073131bcc509bfad41e2}{get\+\_\+board\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Getter for the board matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_board}{Board$<$ int $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}, int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_board_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{class_board_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () const
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () const
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_numerical___tic_tac_toe___board_a11e0d5556504fa299a3953ddbf956407}{is\+\_\+number\+\_\+used}} (int val) const
+\begin{DoxyCompactList}\small\item\em Checks if a number has already been played on the board. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_numerical___tic_tac_toe___board_a9c67ce9d7f2a9fe863f9f893195f92f5}{line\+\_\+sum}} (int sx, int sy, int dx, int dy) const
+\begin{DoxyCompactList}\small\item\em Calculates the sum of a line (row, col, or diagonal). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_numerical___tic_tac_toe___board_a9ff6241c84fff46c357f032135d2af1b}{line\+\_\+belongs\+\_\+to\+\_\+player}} (int sx, int sy, int dx, int dy, int player\+Flag) const
+\begin{DoxyCompactList}\small\item\em Checks if a line belongs to a specific player (Odd or Even parity). \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_numerical___tic_tac_toe___board_a69ace7aea22142556d77aca3cadd5541}{any\+\_\+winning\+\_\+line}} () const
+\begin{DoxyCompactList}\small\item\em Checks if ANY winning line exists (used for Draw logic). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_board}{Board$<$ int $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ int $>$ $>$ \mbox{\hyperlink{class_board_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a 3x3 board for Numerical Tic-\/\+Tac-\/\+Toe. \doxylink{class_player}{Player} 1 uses odd numbers, \doxylink{class_player}{Player} 2 uses even numbers. Win condition\+: Sum of line equals 15. 
+
+\label{doc-constructors}
+\Hypertarget{class_numerical___tic_tac_toe___board_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_numerical___tic_tac_toe___board_a19c1f07dc43c4388ccc37c0f8fd04c84}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{Numerical\_TicTacToe\_Board()}{Numerical\_TicTacToe\_Board()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_a19c1f07dc43c4388ccc37c0f8fd04c84} 
+Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::\+Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor to initialize 3x3 board with zeros. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_numerical___tic_tac_toe___board_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_numerical___tic_tac_toe___board_a69ace7aea22142556d77aca3cadd5541}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!any\_winning\_line@{any\_winning\_line}}
+\index{any\_winning\_line@{any\_winning\_line}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{any\_winning\_line()}{any\_winning\_line()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_a69ace7aea22142556d77aca3cadd5541} 
+bool Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::any\+\_\+winning\+\_\+line (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Checks if ANY winning line exists (used for Draw logic). 
+
+\begin{DoxyReturn}{Returns}
+True if there is a winner. 
+\end{DoxyReturn}
+\Hypertarget{class_numerical___tic_tac_toe___board_ad13b2a16d418c42f17ccc8c150c6ad7f}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_ad13b2a16d418c42f17ccc8c150c6ad7f} 
+bool Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if game is over (win, lose, or draw). 
+
+
+
+Implements \mbox{\hyperlink{class_board_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ int $>$}}.
+
+\Hypertarget{class_numerical___tic_tac_toe___board_a7021f97f6216073131bcc509bfad41e2}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!get\_board\_matrix@{get\_board\_matrix}}
+\index{get\_board\_matrix@{get\_board\_matrix}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{get\_board\_matrix()}{get\_board\_matrix()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_a7021f97f6216073131bcc509bfad41e2} 
+vector$<$ vector$<$ int $>$ $>$ Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::get\+\_\+board\+\_\+matrix (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Getter for the board matrix. 
+
+\Hypertarget{class_numerical___tic_tac_toe___board_a0361d2ad31b8c62c290593e2d203b856}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_a0361d2ad31b8c62c290593e2d203b856} 
+bool Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks for a draw. 
+
+\begin{DoxyReturn}{Returns}
+True if board is full and no winner. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ int $>$}}.
+
+\Hypertarget{class_numerical___tic_tac_toe___board_ab87a2982e563754c9f8a1b90a94e3a70}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_ab87a2982e563754c9f8a1b90a94e3a70} 
+bool Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the player loses (if opponent has winning line). 
+
+\begin{DoxyReturn}{Returns}
+True if opponent wins. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ int $>$}}.
+
+\Hypertarget{class_numerical___tic_tac_toe___board_a11e0d5556504fa299a3953ddbf956407}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!is\_number\_used@{is\_number\_used}}
+\index{is\_number\_used@{is\_number\_used}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_number\_used()}{is\_number\_used()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_a11e0d5556504fa299a3953ddbf956407} 
+bool Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+number\+\_\+used (\begin{DoxyParamCaption}\item[{int}]{val}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Checks if a number has already been played on the board. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & The number to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if used, False otherwise. 
+\end{DoxyReturn}
+\Hypertarget{class_numerical___tic_tac_toe___board_ab927e8e88c22820e3b12f0e8ca1139b1}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_ab927e8e88c22820e3b12f0e8ca1139b1} 
+bool Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the player wins (sum of line is 15). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if player has a winning line. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ int $>$}}.
+
+\Hypertarget{class_numerical___tic_tac_toe___board_a9ff6241c84fff46c357f032135d2af1b}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!line\_belongs\_to\_player@{line\_belongs\_to\_player}}
+\index{line\_belongs\_to\_player@{line\_belongs\_to\_player}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{line\_belongs\_to\_player()}{line\_belongs\_to\_player()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_a9ff6241c84fff46c357f032135d2af1b} 
+bool Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::line\+\_\+belongs\+\_\+to\+\_\+player (\begin{DoxyParamCaption}\item[{int}]{sx}{, }\item[{int}]{sy}{, }\item[{int}]{dx}{, }\item[{int}]{dy}{, }\item[{int}]{player\+Flag}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Checks if a line belongs to a specific player (Odd or Even parity). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & Starting row index. \\
+\hline
+{\em sy} & Starting column index. \\
+\hline
+{\em dx} & Row delta. \\
+\hline
+{\em dy} & Column delta. \\
+\hline
+{\em player\+Flag} & 1 for Odd, 2 for Even. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if all numbers in the line match the player\textquotesingle{}s parity. 
+\end{DoxyReturn}
+\Hypertarget{class_numerical___tic_tac_toe___board_a9c67ce9d7f2a9fe863f9f893195f92f5}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!line\_sum@{line\_sum}}
+\index{line\_sum@{line\_sum}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{line\_sum()}{line\_sum()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_a9c67ce9d7f2a9fe863f9f893195f92f5} 
+int Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::line\+\_\+sum (\begin{DoxyParamCaption}\item[{int}]{sx}{, }\item[{int}]{sy}{, }\item[{int}]{dx}{, }\item[{int}]{dy}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Calculates the sum of a line (row, col, or diagonal). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sx} & Starting row index. \\
+\hline
+{\em sy} & Starting column index. \\
+\hline
+{\em dx} & Row increment (delta). \\
+\hline
+{\em dy} & Column increment (delta). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Sum of the numbers in that line. 
+\end{DoxyReturn}
+\Hypertarget{class_numerical___tic_tac_toe___board_a9a955eaa658645cfece03f1a25b42385}\index{Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!Numerical\_TicTacToe\_Board@{Numerical\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \label{class_numerical___tic_tac_toe___board_a9a955eaa658645cfece03f1a25b42385} 
+bool Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move}{Move}}$<$ int $>$ \texorpdfstring{$\ast$}{*}}]{move}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the board with the player\textquotesingle{}s move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & Pointer to the move (row, col, value). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if move is valid and number is not used. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ int $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_numerical___tic_tac_toe___board_8h}{Numerical\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board.\+h}}\end{DoxyCompactItemize}

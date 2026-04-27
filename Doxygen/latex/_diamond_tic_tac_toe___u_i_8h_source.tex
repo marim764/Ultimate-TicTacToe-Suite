@@ -1,0 +1,28 @@
+\doxysection{Diamond\+Tic\+Tac\+Toe\+\_\+\+UI.\+h}
+\hypertarget{_diamond_tic_tac_toe___u_i_8h_source}{}\label{_diamond_tic_tac_toe___u_i_8h_source}\mbox{\hyperlink{_diamond_tic_tac_toe___u_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ DIAMONDTICTACTOE\_UI\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ DIAMONDTICTACTOE\_UI\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_board_game___classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_diamond_tic_tac_toe___u_i_a33387c4193b49c75de009188ef908894}{DiamondTicTacToe\_UI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_u_i_afb59b53f3c2ed750b1a9a0c7d6dc4a7a}{UI}}<char>\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_diamond_tic_tac_toe___u_i_ad0f6c4b072c834702b8f59f62e2ceb9f}{instructions\_shown}};\ \ }
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{class_diamond_tic_tac_toe___u_i_a33387c4193b49c75de009188ef908894}{DiamondTicTacToe\_UI}}();}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_player}{Player<char>}}*\ \mbox{\hyperlink{class_diamond_tic_tac_toe___u_i_a38b8b17ff33604be0e47f3b1b99decd9}{create\_player}}(std::string\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{_board_game___classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_move}{Move<char>}}*\ \mbox{\hyperlink{class_diamond_tic_tac_toe___u_i_a9b503c3a2bbb76652fabd8e7481967ac}{get\_move}}(\mbox{\hyperlink{class_player}{Player<char>}}*\ player)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_diamond_tic_tac_toe___u_i_a3306dccc59e4ee7a55b10a8342e0da96}{display\_board\_matrix}}(\textcolor{keyword}{const}\ std::vector<std::vector<char>>\&\ matrix)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_diamond_tic_tac_toe___u_i_a40638d5531dd2a8cd70f57bbb06dd0df}{show\_instructions}}();}
+\DoxyCodeLine{00045\ \};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

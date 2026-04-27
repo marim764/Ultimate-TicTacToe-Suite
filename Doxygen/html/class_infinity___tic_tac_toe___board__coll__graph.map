@@ -1,0 +1,5 @@
+<map id="Infinity_TicTacToe_Board" name="Infinity_TicTacToe_Board">
+<area shape="rect" id="Node000001" title="Implements Infinity Tic&#45;Tac&#45;Toe with disappearing moves." alt="" coords="5,80,133,123"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="17,5,121,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,48,72,80,66,80,66,48"/>
+</map>

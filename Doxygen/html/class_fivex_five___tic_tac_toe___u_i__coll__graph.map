@@ -1,0 +1,9 @@
+<map id="FivexFive_TicTacToe_UI" name="FivexFive_TicTacToe_UI">
+<area shape="rect" id="Node000001" title="UI class for handling I/O for 5x5 Tic&#45;Tac&#45;Toe." alt="" coords="10,196,176,223"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html" title=" " alt="" coords="5,89,90,116"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,129,90,195,85,197,56,131"/>
+<area shape="rect" id="Node000003" href="$class_fivex_five___tic_tac_toe___board.html" title="Represents a 5x5 board. Game ends when full. Winner has most 3&#45;in&#45;a&#45;row sequences." alt="" coords="114,81,259,124"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="160,137,106,197,102,194,156,134"/>
+<area shape="rect" id="Node000004" href="$class_board.html" title=" " alt="" coords="134,5,238,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="189,48,189,81,184,81,184,48"/>
+</map>

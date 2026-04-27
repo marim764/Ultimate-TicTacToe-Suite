@@ -1,0 +1,29 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$class_u_i.html" title=" " alt="" coords="5,309,90,336"/>
+<area shape="rect" id="Node000001" href="$class_diamond_tic_tac_toe___u_i.html" title="UI controller for Diamond Tic&#45;Tac&#45;Toe." alt="" coords="145,5,299,32"/>
+<area shape="poly" id="edge15_Node000000_Node000001" title=" " alt="" coords="47,293,52,240,66,173,77,138,92,103,112,71,136,42,152,30,155,35,139,46,116,74,97,106,82,140,71,174,57,241,52,294"/>
+<area shape="rect" id="Node000002" href="$class_fivex_five___tic_tac_toe___u_i.html" title="UI class for handling I/O for 5x5 Tic&#45;Tac&#45;Toe." alt="" coords="139,56,305,83"/>
+<area shape="poly" id="edge16_Node000000_Node000002" title=" " alt="" coords="49,294,57,250,73,196,98,141,115,115,136,93,153,81,156,85,139,97,120,119,103,143,78,198,63,251,55,295"/>
+<area shape="rect" id="Node000003" href="$class_four_in_row___u_i.html" title="User Interface for Connect Four game." alt="" coords="169,107,275,133"/>
+<area shape="poly" id="edge17_Node000000_Node000003" title=" " alt="" coords="53,293,64,259,81,219,104,178,136,143,167,127,169,131,139,147,109,181,86,221,69,261,58,295"/>
+<area shape="rect" id="Node000004" href="$class_infinity___tic_tac_toe___u_i.html" title="User Interface for Infinity Tic&#45;Tac&#45;Toe game." alt="" coords="148,157,296,184"/>
+<area shape="poly" id="edge18_Node000000_Node000004" title=" " alt="" coords="59,294,89,243,111,216,136,194,157,182,160,187,139,198,115,220,94,246,64,297"/>
+<area shape="rect" id="Node000005" href="$class_memory_tic_tac_toe___u_i.html" title="Class handling the UI for Memory Tic&#45;Tac&#45;Toe. Inherits from UI&lt;char&gt; and provides methods for player ..." alt="" coords="147,208,296,235"/>
+<area shape="poly" id="edge19_Node000000_Node000005" title=" " alt="" coords="70,296,100,269,136,244,163,233,165,238,139,249,103,273,74,300"/>
+<area shape="rect" id="Node000006" href="$class_misere___tic_tac_toe___u_i.html" title="Class handling the UI for Misère Tic&#45;Tac&#45;Toe. Inherits from UI&lt;char&gt; and provides methods for player cr..." alt="" coords="148,259,296,285"/>
+<area shape="poly" id="edge20_Node000000_Node000006" title=" " alt="" coords="103,304,173,283,174,288,105,309"/>
+<area shape="rect" id="Node000007" href="$class_moving___x_o___u_i.html" title="UI class for 4x4 Moving Tic&#45;Tac&#45;Toe game." alt="" coords="167,309,277,336"/>
+<area shape="poly" id="edge21_Node000000_Node000007" title=" " alt="" coords="105,320,166,320,166,325,105,325"/>
+<area shape="rect" id="Node000008" href="$class_obstacles___tic_tac_toe___u_i.html" title="Handles I/O for the Obstacles game." alt="" coords="138,360,306,387"/>
+<area shape="poly" id="edge22_Node000000_Node000008" title=" " alt="" coords="105,336,174,357,173,362,103,342"/>
+<area shape="rect" id="Node000009" href="$class_pyramid_tic_tac_toe___u_i.html" title="Handles user interaction for the Pyramid Tic&#45;Tac&#45;Toe game." alt="" coords="147,411,297,437"/>
+<area shape="poly" id="edge23_Node000000_Node000009" title=" " alt="" coords="74,345,103,372,139,396,165,408,163,413,136,401,100,376,70,349"/>
+<area shape="rect" id="Node000010" href="$class_s_u_s___u_i.html" title="User Interface class for the SUS game." alt="" coords="187,461,257,488"/>
+<area shape="poly" id="edge24_Node000000_Node000010" title=" " alt="" coords="64,349,94,399,115,425,139,447,162,459,187,467,186,472,160,464,136,452,111,429,89,402,59,352"/>
+<area shape="rect" id="Node000011" href="$class_ultimate_tic_tac_toe___u_i.html" title="UI class for Ultimate Tic&#45;Tac&#45;Toe." alt="" coords="146,512,298,539"/>
+<area shape="poly" id="edge25_Node000000_Node000011" title=" " alt="" coords="58,350,69,385,86,424,109,464,139,498,157,509,154,514,136,502,104,467,81,427,64,386,53,352"/>
+<area shape="rect" id="Node000012" href="$class_word___tic_tac_toe___u_i.html" title="User Interface for Word Tic&#45;Tac&#45;Toe." alt="" coords="152,563,292,589"/>
+<area shape="poly" id="edge26_Node000000_Node000012" title=" " alt="" coords="55,351,63,394,78,448,103,502,120,527,139,549,156,560,153,564,136,553,115,530,98,505,73,449,57,395,49,351"/>
+<area shape="rect" id="Node000013" href="$class_x_o___u_i.html" title="User Interface class for the X&#45;O (Tic&#45;Tac&#45;Toe) game." alt="" coords="191,613,252,640"/>
+<area shape="poly" id="edge27_Node000000_Node000013" title=" " alt="" coords="52,351,57,404,71,471,82,506,97,540,116,571,139,599,164,615,191,622,190,627,162,619,136,603,112,575,92,542,77,508,66,472,52,405,47,352"/>
+</map>

@@ -1,0 +1,19 @@
+<map id="FivexFive_TicTacToe_Board.cpp" name="FivexFive_TicTacToe_Board.cpp">
+<area shape="rect" id="Node000001" title="Implementation of 5x5 Tic&#45;Tac&#45;Toe Board logic." alt="" coords="159,5,304,48"/>
+<area shape="rect" id="Node000002" href="$_fivex_five___tic_tac_toe___board_8h.html" title="Header file for 5x5 Tic&#45;Tac&#45;Toe Board class." alt="" coords="96,96,241,139"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="219,50,194,85,190,82,215,47"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="266,104,325,131"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="248,47,280,90,275,93,244,50"/>
+<area shape="rect" id="Node000003" href="$_board_game___classes_8h.html" title=" " alt="" coords="90,187,247,213"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="171,139,171,171,166,171,166,139"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="5,261,63,288"/>
+<area shape="poly" id="edge7_Node000002_Node000005" title=" " alt="" coords="136,141,107,162,80,188,60,218,46,248,41,246,56,215,76,185,103,158,133,137"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="256,261,327,288"/>
+<area shape="poly" id="edge8_Node000002_Node000006" title=" " alt="" coords="207,137,236,158,261,185,278,215,288,245,283,247,273,217,257,188,232,162,204,141"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="87,261,141,288"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="161,215,135,250,131,247,157,212"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="146,216,72,256,70,251,144,212"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="191,212,258,251,255,255,189,216"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="165,261,231,288"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="176,213,190,246,185,248,171,215"/>
+</map>

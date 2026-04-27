@@ -1,0 +1,9 @@
+<map id="Word_TicTacToe_UI" name="Word_TicTacToe_UI">
+<area shape="rect" id="Node000001" title="User Interface for Word Tic&#45;Tac&#45;Toe." alt="" coords="24,180,164,207"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html" title=" " alt="" coords="5,81,90,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,121,91,179,86,181,58,123"/>
+<area shape="rect" id="Node000003" href="$class_word___tic_tac_toe___board.html" title="Represents the 3x3 board for Word Tic&#45;Tac&#45;Toe. Players place letters to form valid 3&#45;letter words." alt="" coords="113,81,272,108"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,121,109,182,105,178,168,117"/>
+<area shape="rect" id="Node000004" href="$class_board.html" title=" " alt="" coords="141,5,245,32"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="196,47,196,81,190,81,190,47"/>
+</map>

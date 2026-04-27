@@ -1,0 +1,58 @@
+\doxysection{Word\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Classes.\+h}
+\hypertarget{_word___tic_tac_toe___classes_8h_source}{}\label{_word___tic_tac_toe___classes_8h_source}\mbox{\hyperlink{_word___tic_tac_toe___classes_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#ifndef\ WORD\_TICTACTOE\_CLASSES\_H\ }\textcolor{comment}{//Start\ of\ include\ guard}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#define\ WORD\_TICTACTOE\_CLASSES\_H}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_board_game___classes_8h}{BoardGame\_Classes.h}}"{}}\ }
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <set>}\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <string>}\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ <fstream>}\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <algorithm>}\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\#include\ <cctype>}\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#include\ <vector>}\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_word___tic_tac_toe___board_a46af0085d6a1934deb22144a17369fe0}{Word\_TicTacToe\_Board}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_board_ae5dfded241ee3644196e2f6074d1d0b1}{Board}}<char>\ \{}
+\DoxyCodeLine{00025\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00026\ \ \ \ \ set<string>\ \mbox{\hyperlink{class_word___tic_tac_toe___board_aeb575afe70dcfec3b34fb8c415a56270}{dictionary}};\ \ }
+\DoxyCodeLine{00027\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_a1706a1b7567ccf42f07768788fa1fb00}{empty\_symbol}};\ \ \ \ \ \ \ }
+\DoxyCodeLine{00028\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_a2a5431e41bfb725dfdb9307040558e16}{load\_dictionary}}();\ \ \ \ }
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00041\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_abd2cff29e57dc79e4cde4a78617db77b}{check\_line}}(\textcolor{keywordtype}{char}\ c1,\ \textcolor{keywordtype}{char}\ c2,\ \textcolor{keywordtype}{char}\ c3);\ }
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_word___tic_tac_toe___board_a46af0085d6a1934deb22144a17369fe0}{Word\_TicTacToe\_Board}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_a6a909a484ecf5922040489be2b9bf9d4}{update\_board}}(\mbox{\hyperlink{class_move}{Move<char>}}*\ move)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_a880823d1ee6888788e473f735fd04d20}{is\_win}}(\mbox{\hyperlink{class_player}{Player<char>}}*\ player)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00068\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_a479b517b9159fe228c05f08f9f84ae60}{is\_lose}}(\mbox{\hyperlink{class_player}{Player<char>}}*\ player)\textcolor{keyword}{\ override\ }\{\ \textcolor{keywordflow}{return}\ \textcolor{keyword}{false};\ \}}
+\DoxyCodeLine{00069\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_a14aa6e000c2b154e31b222691f0773cf}{is\_draw}}(\mbox{\hyperlink{class_player}{Player<char>}}*\ player)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00076\ }
+\DoxyCodeLine{00081\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_a4ca4066aa1797822422cb826feb9e425}{game\_is\_over}}(\mbox{\hyperlink{class_player}{Player<char>}}*\ player)\ \textcolor{keyword}{override};\ }
+\DoxyCodeLine{00082\ }
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{class_move}{Move<char>}}\ \mbox{\hyperlink{class_word___tic_tac_toe___board_a6355664f689839633889fedcdadcc00d}{get\_best\_move}}();}
+\DoxyCodeLine{00088\ }
+\DoxyCodeLine{00089\ \};}
+\DoxyCodeLine{00094\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_word___tic_tac_toe___u_i_aaf88cab9645d0f3fa03351db870e39b2}{Word\_TicTacToe\_UI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_u_i_afb59b53f3c2ed750b1a9a0c7d6dc4a7a}{UI}}<char>\ \{}
+\DoxyCodeLine{00095\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00096\ \ \ \ \ \mbox{\hyperlink{class_word___tic_tac_toe___board}{Word\_TicTacToe\_Board}}*\ \mbox{\hyperlink{class_word___tic_tac_toe___u_i_a079f6c4166191b1658cdd8234e01c5d3}{boardPtr}};\ }
+\DoxyCodeLine{00097\ }
+\DoxyCodeLine{00098\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00103\ \ \ \ \ \mbox{\hyperlink{class_word___tic_tac_toe___u_i_aaf88cab9645d0f3fa03351db870e39b2}{Word\_TicTacToe\_UI}}(\mbox{\hyperlink{class_word___tic_tac_toe___board}{Word\_TicTacToe\_Board}}*\ b);}
+\DoxyCodeLine{00104\ }
+\DoxyCodeLine{00112\ \ \ \ \ \mbox{\hyperlink{class_player}{Player<char>}}*\ \mbox{\hyperlink{class_word___tic_tac_toe___u_i_a5d1efdc65d4cc874fd23cad84592b1c5}{create\_player}}(\textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{_board_game___classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00113\ }
+\DoxyCodeLine{00119\ \ \ \ \ \mbox{\hyperlink{class_move}{Move<char>}}*\ \mbox{\hyperlink{class_word___tic_tac_toe___u_i_a6e1b9721ec84dbea671844c9b17ec37d}{get\_move}}(\mbox{\hyperlink{class_player}{Player<char>}}*\ player)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00120\ \};}
+\DoxyCodeLine{00121\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//End\ of\ include\ guard}}
+
+\end{DoxyCode}

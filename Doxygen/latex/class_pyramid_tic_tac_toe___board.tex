@@ -1,0 +1,341 @@
+\doxysection{Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board Class Reference}
+\hypertarget{class_pyramid_tic_tac_toe___board}{}\label{class_pyramid_tic_tac_toe___board}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+
+
+Represents the pyramid-\/shaped Tic-\/\+Tac-\/\+Toe game board.  
+
+
+
+
+{\ttfamily \#include $<$Pyramid\+Tic\+Tac\+Toe\+\_\+\+Classes.\+h$>$}
+
+
+
+Inheritance diagram for Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_pyramid_tic_tac_toe___board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=208pt]{class_pyramid_tic_tac_toe___board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_pyramid_tic_tac_toe___board_a8cf6751faf2183e76aa253e83f239e7e}{Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a Pyramid Tic-\/\+Tac-\/\+Toe board with 3 rows and 5 columns. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pyramid_tic_tac_toe___board_a4f4c3ddd4c1907f1f75cfef5fbdf60ff}{update\+\_\+board}} (\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}move) override
+\begin{DoxyCompactList}\small\item\em Updates the board by placing the player’s move. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pyramid_tic_tac_toe___board_a8cbef88b1925b712e73e206ebb8816b3}{is\+\_\+win}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks whether the given player has achieved a winning pattern. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pyramid_tic_tac_toe___board_ac5bbd36d85c0315052dd5a7a237bd24e}{is\+\_\+lose}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the player has lost. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pyramid_tic_tac_toe___board_aaf7adcadfc54dce92f7590d943dbbcab}{is\+\_\+draw}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Determines if the match ended in a draw. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_pyramid_tic_tac_toe___board_a0d0c7e45e47292f8cf480a844b4692e3}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Indicates whether the game has ended (either win or draw). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}, int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_board_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () const
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () const
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_board_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_pyramid_tic_tac_toe___board_ac3a3c6f9d1ffda589957abbcf0fb736c}{is\+\_\+valid\+\_\+position}} (int x, int y) const
+\begin{DoxyCompactList}\small\item\em Checks if a given (x, y) position is valid on the pyramid board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_pyramid_tic_tac_toe___board_a0aff2d23d6b02035f4912d703237da9f}{blank\+\_\+symbol}} = \textquotesingle{}.\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Character representing an empty cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the pyramid-\/shaped Tic-\/\+Tac-\/\+Toe game board. 
+
+This class implements the rules, board layout, and win/draw conditions for the Pyramid Tic-\/\+Tac-\/\+Toe game. It inherits from \doxylink{class_board}{Board$<$char$>$}. 
+
+\label{doc-constructors}
+\Hypertarget{class_pyramid_tic_tac_toe___board_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_pyramid_tic_tac_toe___board_a8cf6751faf2183e76aa253e83f239e7e}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{PyramidTicTacToe\_Board()}{PyramidTicTacToe\_Board()}}
+{\footnotesize\ttfamily \label{class_pyramid_tic_tac_toe___board_a8cf6751faf2183e76aa253e83f239e7e} 
+Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+::\+Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructs a Pyramid Tic-\/\+Tac-\/\+Toe board with 3 rows and 5 columns. 
+
+Constructs a Pyramid Tic-\/\+Tac-\/\+Toe board with 3 rows and 5 columns. Initializes all cells with blank\+\_\+symbol.
+
+All cells are initialized to blank\+\_\+symbol (\textquotesingle{}.\textquotesingle{}). 
+
+\label{doc-func-members}
+\Hypertarget{class_pyramid_tic_tac_toe___board_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_pyramid_tic_tac_toe___board_a0d0c7e45e47292f8cf480a844b4692e3}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \label{class_pyramid_tic_tac_toe___board_a0d0c7e45e47292f8cf480a844b4692e3} 
+bool Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Indicates whether the game has ended (either win or draw). 
+
+Checks whether the game is finished (win or draw).
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \doxylink{class_player}{Player} to evaluate the status for. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if game is over, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \doxylink{class_player}{Player} whose end condition is checked \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if game is over; false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+\Hypertarget{class_pyramid_tic_tac_toe___board_aaf7adcadfc54dce92f7590d943dbbcab}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \label{class_pyramid_tic_tac_toe___board_aaf7adcadfc54dce92f7590d943dbbcab} 
+bool Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Determines if the match ended in a draw. 
+
+Determines whether the match is a draw.
+
+A draw occurs when\+:
+\begin{DoxyItemize}
+\item All 9 valid pyramid cells are filled, AND
+\item No player has won.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player being evaluated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if game is a draw, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & \doxylink{class_player}{Player} whose result is evaluated \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if board filled and no winner; false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+\Hypertarget{class_pyramid_tic_tac_toe___board_ac5bbd36d85c0315052dd5a7a237bd24e}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \label{class_pyramid_tic_tac_toe___board_ac5bbd36d85c0315052dd5a7a237bd24e} 
+bool Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the player has lost. 
+
+This variant does not define a losing condition for a single player.
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Unused. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Always returns false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+\Hypertarget{class_pyramid_tic_tac_toe___board_ac3a3c6f9d1ffda589957abbcf0fb736c}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!is\_valid\_position@{is\_valid\_position}}
+\index{is\_valid\_position@{is\_valid\_position}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_position()}{is\_valid\_position()}}
+{\footnotesize\ttfamily \label{class_pyramid_tic_tac_toe___board_ac3a3c6f9d1ffda589957abbcf0fb736c} 
+bool Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+valid\+\_\+position (\begin{DoxyParamCaption}\item[{int}]{x}{, }\item[{int}]{y}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checks if a given (x, y) position is valid on the pyramid board. 
+
+Checks whether a given (x,y) lies within the pyramid shape.
+
+Valid positions\+:
+\begin{DoxyItemize}
+\item Row 0\+: only column 2
+\item Row 1\+: columns 1, 2, 3
+\item Row 2\+: columns 0 to 4
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Row index \\
+\hline
+{\em y} & Column index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if position is inside the pyramid shape, false otherwise
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Row index \\
+\hline
+{\em y} & Column index \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if position is valid in pyramid; false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_pyramid_tic_tac_toe___board_a8cbef88b1925b712e73e206ebb8816b3}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \label{class_pyramid_tic_tac_toe___board_a8cbef88b1925b712e73e206ebb8816b3} 
+bool Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks whether the given player has achieved a winning pattern. 
+
+Checks if a player has achieved a winning line. Winning lines include horizontal, vertical, and diagonal.
+
+Winning conditions include\+:
+\begin{DoxyItemize}
+\item Horizontal 3-\/in-\/a-\/row (middle or base rows)
+\item Vertical 3-\/in-\/a-\/row (center column)
+\item Diagonal pyramid alignments
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player whose win condition is checked. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player has won, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to the player to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if player has won; false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+\Hypertarget{class_pyramid_tic_tac_toe___board_a4f4c3ddd4c1907f1f75cfef5fbdf60ff}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \label{class_pyramid_tic_tac_toe___board_a4f4c3ddd4c1907f1f75cfef5fbdf60ff} 
+bool Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{move}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the board by placing the player’s move. 
+
+Applies a player\textquotesingle{}s move if valid and cell is empty.
+
+The move is applied only if\+:
+\begin{DoxyItemize}
+\item The cell is inside the pyramid shape.
+\item The cell is empty.
+\end{DoxyItemize}
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & Pointer to the move object containing coordinates and symbol. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move is successfully applied, false otherwise.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em move} & The move containing (x,y) and player\textquotesingle{}s symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if board updated; false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_pyramid_tic_tac_toe___board_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_pyramid_tic_tac_toe___board_a0aff2d23d6b02035f4912d703237da9f}\index{PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}!blank\_symbol@{blank\_symbol}}
+\index{blank\_symbol@{blank\_symbol}!PyramidTicTacToe\_Board@{PyramidTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{blank\_symbol}{blank\_symbol}}
+{\footnotesize\ttfamily \label{class_pyramid_tic_tac_toe___board_a0aff2d23d6b02035f4912d703237da9f} 
+char Pyramid\+Tic\+Tac\+Toe\+\_\+\+Board\+::blank\+\_\+symbol = \textquotesingle{}.\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Character representing an empty cell. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pyramid_tic_tac_toe___classes_8h}{Pyramid\+Tic\+Tac\+Toe\+\_\+\+Classes.\+h}}\item 
+\mbox{\hyperlink{_pyramid_tic_tac_toe___classes_8cpp}{Pyramid\+Tic\+Tac\+Toe\+\_\+\+Classes.\+cpp}}\end{DoxyCompactItemize}

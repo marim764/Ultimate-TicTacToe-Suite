@@ -1,0 +1,5 @@
+<map id="FivexFive_TicTacToe_Board" name="FivexFive_TicTacToe_Board">
+<area shape="rect" id="Node000001" title="Represents a 5x5 board. Game ends when full. Winner has most 3&#45;in&#45;a&#45;row sequences." alt="" coords="5,80,151,123"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="26,5,130,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="81,48,81,80,75,80,75,48"/>
+</map>

@@ -1,0 +1,137 @@
+\doxysection{Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI Class Reference}
+\hypertarget{class_ultimate_tic_tac_toe___u_i}{}\label{class_ultimate_tic_tac_toe___u_i}\index{UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}}
+
+
+\doxylink{class_u_i}{UI} class for Ultimate Tic-\/\+Tac-\/\+Toe.  
+
+
+
+
+{\ttfamily \#include $<$Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI.\+h$>$}
+
+
+
+Inheritance diagram for Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_ultimate_tic_tac_toe___u_i__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=194pt]{class_ultimate_tic_tac_toe___u_i__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ultimate_tic_tac_toe___u_i_a5dcbc77df33da04c615b992c05f9897f}{Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ultimate_tic_tac_toe___u_i_a76e484f22919ff2068ecbe5ae91874f4}{create\+\_\+player}} (string \&name, char symbol, \mbox{\hyperlink{_board_game___classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}} type) override
+\begin{DoxyCompactList}\small\item\em Create player. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_ultimate_tic_tac_toe___u_i_a4338a56b42da0f2b00ad0d0eb5659a92}{get\+\_\+move}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Get move from player. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_ultimate_tic_tac_toe___u_i_a8b16f56f01edaba2e3f9ba2caf8eeace}{display\+\_\+board\+\_\+matrix}} (const vector$<$ vector$<$ char $>$ $>$ \&m) const override
+\begin{DoxyCompactList}\small\item\em Display 9x9 board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_u_i}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_u_i_afb59b53f3c2ed750b1a9a0c7d6dc4a7a}{UI}} (int cell\+\_\+display\+\_\+width=3)
+\begin{DoxyCompactList}\small\item\em Construct the \doxylink{class_u_i}{UI} and display a welcome message. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_u_i_a1012e508ff7df030714c62ddf6b261a7}{\texorpdfstring{$\sim$}{\string~}\+UI}} ()
+\item 
+virtual void \mbox{\hyperlink{class_u_i_aaad19c26b8e4c49ba7ada54abd83e23c}{display\+\_\+message}} (string message)
+\begin{DoxyCompactList}\small\item\em Display any message to the user. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}\texorpdfstring{$\ast$}{*} \mbox{\hyperlink{class_u_i_a6966a040c995b2292e5edddaa94f889a}{setup\+\_\+players}} ()
+\begin{DoxyCompactList}\small\item\em Set up players for the game. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Member Functions inherited from \mbox{\hyperlink{class_u_i}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual string \mbox{\hyperlink{class_u_i_a7b1603de1f73fbb4006e4f00a27c44da}{get\+\_\+player\+\_\+name}} (string player\+\_\+label)
+\begin{DoxyCompactList}\small\item\em Ask the user for the player\textquotesingle{}s name. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_board_game___classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}} \mbox{\hyperlink{class_u_i_ac3d45fea2bbcaa0372d8e5101e116ca1}{get\+\_\+player\+\_\+type\+\_\+choice}} (string player\+\_\+label, const vector$<$ string $>$ \&options)
+\begin{DoxyCompactList}\small\item\em Ask the user to choose the player type from a list. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_u_i}{UI$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_u_i_a6c79c489ae9aa3a7860fb58e5a14ddfe}{cell\+\_\+width}}
+\begin{DoxyCompactList}\small\item\em Width of each displayed board cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\doxylink{class_u_i}{UI} class for Ultimate Tic-\/\+Tac-\/\+Toe. 
+
+\label{doc-constructors}
+\Hypertarget{class_ultimate_tic_tac_toe___u_i_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ultimate_tic_tac_toe___u_i_a5dcbc77df33da04c615b992c05f9897f}\index{UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}!UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}}
+\index{UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}!UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}}
+\doxysubsubsection{\texorpdfstring{UltimateTicTacToe\_UI()}{UltimateTicTacToe\_UI()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___u_i_a5dcbc77df33da04c615b992c05f9897f} 
+Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI\+::\+Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_ultimate_tic_tac_toe___u_i_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ultimate_tic_tac_toe___u_i_a76e484f22919ff2068ecbe5ae91874f4}\index{UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}!create\_player@{create\_player}}
+\index{create\_player@{create\_player}!UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}}
+\doxysubsubsection{\texorpdfstring{create\_player()}{create\_player()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___u_i_a76e484f22919ff2068ecbe5ae91874f4} 
+\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*} Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI\+::create\+\_\+player (\begin{DoxyParamCaption}\item[{string \&}]{name}{, }\item[{char}]{symbol}{, }\item[{\mbox{\hyperlink{_board_game___classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{Player\+Type}}}]{type}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Create player. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_u_i_a94561e0bb4bbcbe5ff71ca6d751922df}{UI$<$ char $>$}}.
+
+\Hypertarget{class_ultimate_tic_tac_toe___u_i_a8b16f56f01edaba2e3f9ba2caf8eeace}\index{UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}!display\_board\_matrix@{display\_board\_matrix}}
+\index{display\_board\_matrix@{display\_board\_matrix}!UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}}
+\doxysubsubsection{\texorpdfstring{display\_board\_matrix()}{display\_board\_matrix()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___u_i_a8b16f56f01edaba2e3f9ba2caf8eeace} 
+void Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI\+::display\+\_\+board\+\_\+matrix (\begin{DoxyParamCaption}\item[{const vector$<$ vector$<$ char $>$ $>$ \&}]{m}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Display 9x9 board. 
+
+
+
+Reimplemented from \mbox{\hyperlink{class_u_i_aa3775124efaeac59935ae0afb354708d}{UI$<$ char $>$}}.
+
+\Hypertarget{class_ultimate_tic_tac_toe___u_i_a4338a56b42da0f2b00ad0d0eb5659a92}\index{UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}!get\_move@{get\_move}}
+\index{get\_move@{get\_move}!UltimateTicTacToe\_UI@{UltimateTicTacToe\_UI}}
+\doxysubsubsection{\texorpdfstring{get\_move()}{get\_move()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___u_i_a4338a56b42da0f2b00ad0d0eb5659a92} 
+\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*} Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI\+::get\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get move from player. 
+
+Get player\textquotesingle{}s move. 
+
+Implements \mbox{\hyperlink{class_u_i_a8befa259c38c57e6ae2e8ed81c476337}{UI$<$ char $>$}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ultimate_tic_tac_toe___u_i_8h}{Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI.\+h}}\item 
+\mbox{\hyperlink{_ultimate_tic_tac_toe___u_i_8cpp}{Ultimate\+Tic\+Tac\+Toe\+\_\+\+UI.\+cpp}}\end{DoxyCompactItemize}

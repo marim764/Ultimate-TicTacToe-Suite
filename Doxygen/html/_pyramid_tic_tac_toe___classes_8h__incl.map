@@ -1,0 +1,15 @@
+<map id="PyramidTicTacToe_Classes.h" name="PyramidTicTacToe_Classes.h">
+<area shape="rect" id="Node000001" title="Defines classes for the Pyramid Tic&#45;Tac&#45;Toe game." alt="" coords="5,5,201,32"/>
+<area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="141,80,297,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="125,30,187,69,184,74,122,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="26,155,79,181"/>
+<area shape="poly" id="edge6_Node000001_Node000003" title=" " alt="" coords="101,33,64,141,59,139,96,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="104,155,161,181"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="108,32,130,139,124,140,103,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="191,110,94,151,92,147,189,105"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="206,109,160,147,157,143,202,105"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="185,155,256,181"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="222,107,222,139,217,139,217,107"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="280,155,347,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="237,105,287,143,284,147,234,109"/>
+</map>

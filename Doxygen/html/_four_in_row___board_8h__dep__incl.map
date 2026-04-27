@@ -1,0 +1,5 @@
+<map id="FourInRow_Board.h" name="FourInRow_Board.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,143,32"/>
+<area shape="rect" id="Node000002" href="$_game_app_8cpp.html" title="Main application file containing the game menu and runners." alt="" coords="22,80,126,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,48,77,80,71,80,71,48"/>
+</map>

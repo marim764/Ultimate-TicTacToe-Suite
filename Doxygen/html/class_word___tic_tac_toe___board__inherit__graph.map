@@ -1,0 +1,5 @@
+<map id="Word_TicTacToe_Board" name="Word_TicTacToe_Board">
+<area shape="rect" id="Node000001" title="Represents the 3x3 board for Word Tic&#45;Tac&#45;Toe. Players place letters to form valid 3&#45;letter words." alt="" coords="5,80,165,107"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="33,5,137,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="88,48,88,80,82,80,82,48"/>
+</map>

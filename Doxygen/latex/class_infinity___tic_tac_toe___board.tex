@@ -1,0 +1,246 @@
+\doxysection{Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board Class Reference}
+\hypertarget{class_infinity___tic_tac_toe___board}{}\label{class_infinity___tic_tac_toe___board}\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+
+
+Implements Infinity Tic-\/\+Tac-\/\+Toe with disappearing moves.  
+
+
+
+
+{\ttfamily \#include $<$Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board.\+h$>$}
+
+
+
+Inheritance diagram for Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_infinity___tic_tac_toe___board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=176pt]{class_infinity___tic_tac_toe___board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_infinity___tic_tac_toe___board_a581f735308b0afc9b5fa002067dd625a}{Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructor -\/ initializes 3x3 board with empty spaces. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_infinity___tic_tac_toe___board_aa816a3f72f3047a353024f26582f33f2}{update\+\_\+board}} (\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}move) override
+\begin{DoxyCompactList}\small\item\em Updates board with player\textquotesingle{}s move and manages move removal. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_infinity___tic_tac_toe___board_ad2bd5afcc29864d4f14e65f09516f024}{is\+\_\+win}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if a player has won the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_infinity___tic_tac_toe___board_a35ec8c5e2ec6cf81ccbb3cd00fa29179}{is\+\_\+lose}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if a player has lost the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_infinity___tic_tac_toe___board_ab8eb27eb1de59876632c2e07cd60246f}{is\+\_\+draw}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the game is a draw. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_infinity___tic_tac_toe___board_a0f50c1a5658475a9aab23101b0439928}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the game is over. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}, int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_board_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () const
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () const
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_board_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+queue$<$ pair$<$ int, int $>$ $>$ \mbox{\hyperlink{class_infinity___tic_tac_toe___board_a0e415e182dbe1339d49efce711cc6ea8}{move\+\_\+history}}
+\begin{DoxyCompactList}\small\item\em Tracks move order for removal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements Infinity Tic-\/\+Tac-\/\+Toe with disappearing moves. 
+
+A 3x3 Tic-\/\+Tac-\/\+Toe variant where after every 3 moves, the oldest move on the board disappears. Players must achieve 3-\/in-\/a-\/row before their pieces vanish. Creates a dynamic, time-\/pressured gameplay experience. 
+
+\label{doc-constructors}
+\Hypertarget{class_infinity___tic_tac_toe___board_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_infinity___tic_tac_toe___board_a581f735308b0afc9b5fa002067dd625a}\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}!Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}!Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{Infinity\_TicTacToe\_Board()}{Infinity\_TicTacToe\_Board()}}
+{\footnotesize\ttfamily \label{class_infinity___tic_tac_toe___board_a581f735308b0afc9b5fa002067dd625a} 
+Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::\+Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor -\/ initializes 3x3 board with empty spaces. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_infinity___tic_tac_toe___board_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_infinity___tic_tac_toe___board_a0f50c1a5658475a9aab23101b0439928}\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \label{class_infinity___tic_tac_toe___board_a0f50c1a5658475a9aab23101b0439928} 
+bool Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the game is over. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \doxylink{class_player}{Player} object to check status for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if game has ended (win or draw), false otherwise
+\end{DoxyReturn}
+Note\+: In this implementation, \doxylink{class_infinity___tic_tac_toe___board_a35ec8c5e2ec6cf81ccbb3cd00fa29179}{is\+\_\+lose()} is not included because a player losing means opponent winning, which is covered by \doxylink{class_infinity___tic_tac_toe___board_ad2bd5afcc29864d4f14e65f09516f024}{is\+\_\+win()}. 
+
+Implements \mbox{\hyperlink{class_board_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+\Hypertarget{class_infinity___tic_tac_toe___board_ab8eb27eb1de59876632c2e07cd60246f}\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \label{class_infinity___tic_tac_toe___board_ab8eb27eb1de59876632c2e07cd60246f} 
+bool Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the game is a draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \doxylink{class_player}{Player} object (unused, required by interface) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if board is full with no winner, false otherwise
+\end{DoxyReturn}
+In Infinity Tic-\/\+Tac-\/\+Toe, draws are rare because pieces keep disappearing, but possible if board fills without a winner. 
+
+Implements \mbox{\hyperlink{class_board_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+\Hypertarget{class_infinity___tic_tac_toe___board_a35ec8c5e2ec6cf81ccbb3cd00fa29179}\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \label{class_infinity___tic_tac_toe___board_a35ec8c5e2ec6cf81ccbb3cd00fa29179} 
+bool Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if a player has lost the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \doxylink{class_player}{Player} object to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if opponent has three in a row, false otherwise
+\end{DoxyReturn}
+Loss occurs when opponent achieves 3-\/in-\/a-\/row. Similar logic to \doxylink{class_infinity___tic_tac_toe___board_ad2bd5afcc29864d4f14e65f09516f024}{is\+\_\+win()} but checks opponent\textquotesingle{}s symbol. 
+
+Implements \mbox{\hyperlink{class_board_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+\Hypertarget{class_infinity___tic_tac_toe___board_ad2bd5afcc29864d4f14e65f09516f024}\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \label{class_infinity___tic_tac_toe___board_ad2bd5afcc29864d4f14e65f09516f024} 
+bool Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if a player has won the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \doxylink{class_player}{Player} object to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if player has three in a row, false otherwise
+\end{DoxyReturn}
+Checks all standard Tic-\/\+Tac-\/\+Toe winning patterns\+:
+\begin{DoxyItemize}
+\item 3 horizontal rows
+\item 3 vertical columns ~\newline
+
+\item 2 diagonals
+\end{DoxyItemize}
+
+Win must be achieved before pieces start disappearing. 
+
+Implements \mbox{\hyperlink{class_board_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+\Hypertarget{class_infinity___tic_tac_toe___board_aa816a3f72f3047a353024f26582f33f2}\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \label{class_infinity___tic_tac_toe___board_aa816a3f72f3047a353024f26582f33f2} 
+bool Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{move}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates board with player\textquotesingle{}s move and manages move removal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & Pointer to \doxylink{class_move}{Move} object containing position and symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if move was valid and executed, false otherwise
+\end{DoxyReturn}
+Special Infinity Tic-\/\+Tac-\/\+Toe behavior\+:
+\begin{DoxyItemize}
+\item Records move in history queue
+\item After every 3 moves, removes the oldest move from board
+\item Players must win quickly before their pieces disappear 
+\end{DoxyItemize}
+
+Implements \mbox{\hyperlink{class_board_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_infinity___tic_tac_toe___board_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_infinity___tic_tac_toe___board_a0e415e182dbe1339d49efce711cc6ea8}\index{Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}!move\_history@{move\_history}}
+\index{move\_history@{move\_history}!Infinity\_TicTacToe\_Board@{Infinity\_TicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{move\_history}{move\_history}}
+{\footnotesize\ttfamily \label{class_infinity___tic_tac_toe___board_a0e415e182dbe1339d49efce711cc6ea8} 
+queue$<$pair$<$int, int$>$ $>$ Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board\+::move\+\_\+history\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tracks move order for removal. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_infinity___tic_tac_toe___board_8h}{Infinity\+\_\+\+Tic\+Tac\+Toe\+\_\+\+Board.\+h}}\end{DoxyCompactItemize}

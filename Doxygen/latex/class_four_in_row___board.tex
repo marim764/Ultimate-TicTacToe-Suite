@@ -1,0 +1,388 @@
+\doxysection{Four\+In\+Row\+\_\+\+Board Class Reference}
+\hypertarget{class_four_in_row___board}{}\label{class_four_in_row___board}\index{FourInRow\_Board@{FourInRow\_Board}}
+
+
+Implements Four In Row game logic on a 6x7 grid.  
+
+
+
+
+{\ttfamily \#include $<$Four\+In\+Row\+\_\+\+Board.\+h$>$}
+
+
+
+Inheritance diagram for Four\+In\+Row\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_four_in_row___board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Four\+In\+Row\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=175pt]{class_four_in_row___board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_four_in_row___board_af18d4fbb54e1affa153cbb362c23dbea}{Four\+In\+Row\+\_\+\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructor -\/ initializes 6x7 board with empty spaces. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_four_in_row___board_a9c75246df4c0e6e0d1193f9de1113c9f}{update\+\_\+board}} (\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}move) override
+\begin{DoxyCompactList}\small\item\em Updates board with a player\textquotesingle{}s move. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_four_in_row___board_a928a7af5cfcd825be474bf498e4c1765}{is\+\_\+win}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if a player has won the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_four_in_row___board_a180520c47491fe143d1dccb4f25cd22e}{is\+\_\+lose}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if a player has lost the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_four_in_row___board_a0d3ea4552badba1849be73bf223ed3f7}{is\+\_\+draw}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the game is a draw. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_four_in_row___board_ae1e3a41a3f3d3582afc7cfdfedafe240}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}player) override
+\begin{DoxyCompactList}\small\item\em Checks if the game is over. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_four_in_row___board_a99cae307982f5b2a339c1333b760bbb5}{get\+\_\+best\+\_\+move}} (char symbol, bool is\+\_\+smart=true)
+\begin{DoxyCompactList}\small\item\em Gets the best move using minimax with alpha-\/beta pruning. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}, int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_board_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () const
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () const
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_board_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_four_in_row___board_a3b68d744429dd87fdebbcf5406792140}{is\+\_\+valid\+\_\+column}} (int col)
+\begin{DoxyCompactList}\small\item\em Checks if a column is valid for a move. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_four_in_row___board_a3aae46d2f2e4cc6ada12715ae568b96f}{evaluate\+\_\+board}} ()
+\begin{DoxyCompactList}\small\item\em Evaluates board position from the perspective of \textquotesingle{}X\textquotesingle{} player. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_four_in_row___board_a108a72f97bedb8b61b085f6893a6e19c}{evaluate\+\_\+window}} (char player, char opponent)
+\begin{DoxyCompactList}\small\item\em Evaluates all possible 4-\/cell windows for both players. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_four_in_row___board_a7352b6e27bbe6f8c8976b1b848105c49}{evaluate\+\_\+four\+\_\+cells}} (char c1, char c2, char c3, char c4, char player, char opponent)
+\begin{DoxyCompactList}\small\item\em Evaluates a single 4-\/cell window. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_four_in_row___board_aef7f1604429ec21e5c016f2381e80c67}{minimax}} (int depth, int alpha, int beta, bool is\+\_\+maximizing)
+\begin{DoxyCompactList}\small\item\em Minimax algorithm with alpha-\/beta pruning. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_four_in_row___board_a527d39c278afaad22e5f2b7d91c7af8d}{get\+\_\+next\+\_\+row}} (int col)
+\begin{DoxyCompactList}\small\item\em Finds the next available row in a column. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_four_in_row___board_a230c391d6b7339c325d89873eb7e6371}{move\+\_\+wins}} (char symbol, int col)
+\begin{DoxyCompactList}\small\item\em Checks if placing a piece in a column would create a win. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements Four In Row game logic on a 6x7 grid. 
+
+This class manages the Four In Row game board where players drop pieces into columns. Pieces fall to the lowest available position in the chosen column. The game ends when a player gets four pieces in a row horizontally, vertically, or diagonally. 
+
+\label{doc-constructors}
+\Hypertarget{class_four_in_row___board_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_four_in_row___board_af18d4fbb54e1affa153cbb362c23dbea}\index{FourInRow\_Board@{FourInRow\_Board}!FourInRow\_Board@{FourInRow\_Board}}
+\index{FourInRow\_Board@{FourInRow\_Board}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{FourInRow\_Board()}{FourInRow\_Board()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_af18d4fbb54e1affa153cbb362c23dbea} 
+Four\+In\+Row\+\_\+\+Board\+::\+Four\+In\+Row\+\_\+\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor -\/ initializes 6x7 board with empty spaces. 
+
+
+
+\label{doc-func-members}
+\Hypertarget{class_four_in_row___board_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_four_in_row___board_a3aae46d2f2e4cc6ada12715ae568b96f}\index{FourInRow\_Board@{FourInRow\_Board}!evaluate\_board@{evaluate\_board}}
+\index{evaluate\_board@{evaluate\_board}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{evaluate\_board()}{evaluate\_board()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a3aae46d2f2e4cc6ada12715ae568b96f} 
+int Four\+In\+Row\+\_\+\+Board\+::evaluate\+\_\+board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Evaluates board position from the perspective of \textquotesingle{}X\textquotesingle{} player. 
+
+\begin{DoxyReturn}{Returns}
+Positive score favors X, negative favors O, 0 for neutral 
+\end{DoxyReturn}
+\Hypertarget{class_four_in_row___board_a7352b6e27bbe6f8c8976b1b848105c49}\index{FourInRow\_Board@{FourInRow\_Board}!evaluate\_four\_cells@{evaluate\_four\_cells}}
+\index{evaluate\_four\_cells@{evaluate\_four\_cells}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{evaluate\_four\_cells()}{evaluate\_four\_cells()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a7352b6e27bbe6f8c8976b1b848105c49} 
+int Four\+In\+Row\+\_\+\+Board\+::evaluate\+\_\+four\+\_\+cells (\begin{DoxyParamCaption}\item[{char}]{c1}{, }\item[{char}]{c2}{, }\item[{char}]{c3}{, }\item[{char}]{c4}{, }\item[{char}]{player}{, }\item[{char}]{opponent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Evaluates a single 4-\/cell window. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em c1,c2,c3,c4} & The four cells in the window \\
+\hline
+{\em player} & \doxylink{class_player}{Player} symbol being evaluated \\
+\hline
+{\em opponent} & Opponent symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Score for this window configuration 
+\end{DoxyReturn}
+\Hypertarget{class_four_in_row___board_a108a72f97bedb8b61b085f6893a6e19c}\index{FourInRow\_Board@{FourInRow\_Board}!evaluate\_window@{evaluate\_window}}
+\index{evaluate\_window@{evaluate\_window}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{evaluate\_window()}{evaluate\_window()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a108a72f97bedb8b61b085f6893a6e19c} 
+int Four\+In\+Row\+\_\+\+Board\+::evaluate\+\_\+window (\begin{DoxyParamCaption}\item[{char}]{player}{, }\item[{char}]{opponent}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Evaluates all possible 4-\/cell windows for both players. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Current player symbol \\
+\hline
+{\em opponent} & Opponent symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Net score advantage for player 
+\end{DoxyReturn}
+\Hypertarget{class_four_in_row___board_ae1e3a41a3f3d3582afc7cfdfedafe240}\index{FourInRow\_Board@{FourInRow\_Board}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_ae1e3a41a3f3d3582afc7cfdfedafe240} 
+bool Four\+In\+Row\+\_\+\+Board\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the game is over. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \doxylink{class_player}{Player} object to check status for \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if game has ended (win, lose, or draw), false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+\Hypertarget{class_four_in_row___board_a99cae307982f5b2a339c1333b760bbb5}\index{FourInRow\_Board@{FourInRow\_Board}!get\_best\_move@{get\_best\_move}}
+\index{get\_best\_move@{get\_best\_move}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{get\_best\_move()}{get\_best\_move()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a99cae307982f5b2a339c1333b760bbb5} 
+int Four\+In\+Row\+\_\+\+Board\+::get\+\_\+best\+\_\+move (\begin{DoxyParamCaption}\item[{char}]{symbol}{, }\item[{bool}]{is\+\_\+smart}{ = {\ttfamily true}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the best move using minimax with alpha-\/beta pruning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & \doxylink{class_player}{Player} symbol (\textquotesingle{}X\textquotesingle{} or \textquotesingle{}O\textquotesingle{}) \\
+\hline
+{\em is\+\_\+smart} & If true uses minimax AI, if false uses random moves \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Column index (0-\/6) representing the chosen move 
+\end{DoxyReturn}
+\Hypertarget{class_four_in_row___board_a527d39c278afaad22e5f2b7d91c7af8d}\index{FourInRow\_Board@{FourInRow\_Board}!get\_next\_row@{get\_next\_row}}
+\index{get\_next\_row@{get\_next\_row}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{get\_next\_row()}{get\_next\_row()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a527d39c278afaad22e5f2b7d91c7af8d} 
+int Four\+In\+Row\+\_\+\+Board\+::get\+\_\+next\+\_\+row (\begin{DoxyParamCaption}\item[{int}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Finds the next available row in a column. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Column to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Row index where piece would land, or -\/1 if column is full 
+\end{DoxyReturn}
+\Hypertarget{class_four_in_row___board_a0d3ea4552badba1849be73bf223ed3f7}\index{FourInRow\_Board@{FourInRow\_Board}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a0d3ea4552badba1849be73bf223ed3f7} 
+bool Four\+In\+Row\+\_\+\+Board\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the game is a draw. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \doxylink{class_player}{Player} object (needed for interface) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if board is full with no winner, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+\Hypertarget{class_four_in_row___board_a180520c47491fe143d1dccb4f25cd22e}\index{FourInRow\_Board@{FourInRow\_Board}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a180520c47491fe143d1dccb4f25cd22e} 
+bool Four\+In\+Row\+\_\+\+Board\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if a player has lost the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \doxylink{class_player}{Player} object to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if opponent has four in a row, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+\Hypertarget{class_four_in_row___board_a3b68d744429dd87fdebbcf5406792140}\index{FourInRow\_Board@{FourInRow\_Board}!is\_valid\_column@{is\_valid\_column}}
+\index{is\_valid\_column@{is\_valid\_column}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_valid\_column()}{is\_valid\_column()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a3b68d744429dd87fdebbcf5406792140} 
+bool Four\+In\+Row\+\_\+\+Board\+::is\+\_\+valid\+\_\+column (\begin{DoxyParamCaption}\item[{int}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Checks if a column is valid for a move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em col} & Column index to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if column exists and has empty space, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_four_in_row___board_a928a7af5cfcd825be474bf498e4c1765}\index{FourInRow\_Board@{FourInRow\_Board}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a928a7af5cfcd825be474bf498e4c1765} 
+bool Four\+In\+Row\+\_\+\+Board\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{player}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if a player has won the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & Pointer to \doxylink{class_player}{Player} object to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if player has four in a row, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+\Hypertarget{class_four_in_row___board_aef7f1604429ec21e5c016f2381e80c67}\index{FourInRow\_Board@{FourInRow\_Board}!minimax@{minimax}}
+\index{minimax@{minimax}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{minimax()}{minimax()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_aef7f1604429ec21e5c016f2381e80c67} 
+int Four\+In\+Row\+\_\+\+Board\+::minimax (\begin{DoxyParamCaption}\item[{int}]{depth}{, }\item[{int}]{alpha}{, }\item[{int}]{beta}{, }\item[{bool}]{is\+\_\+maximizing}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Minimax algorithm with alpha-\/beta pruning. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em depth} & How many moves ahead to search \\
+\hline
+{\em alpha} & Best already explored option for maximizer \\
+\hline
+{\em beta} & Best already explored option for minimizer ~\newline
+ \\
+\hline
+{\em is\+\_\+maximizing} & True if current player is maximizing (X), false for minimizing (O) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Best evaluation score for current board state 
+\end{DoxyReturn}
+\Hypertarget{class_four_in_row___board_a230c391d6b7339c325d89873eb7e6371}\index{FourInRow\_Board@{FourInRow\_Board}!move\_wins@{move\_wins}}
+\index{move\_wins@{move\_wins}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{move\_wins()}{move\_wins()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a230c391d6b7339c325d89873eb7e6371} 
+bool Four\+In\+Row\+\_\+\+Board\+::move\+\_\+wins (\begin{DoxyParamCaption}\item[{char}]{symbol}{, }\item[{int}]{col}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Checks if placing a piece in a column would create a win. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em symbol} & \doxylink{class_player}{Player} symbol to test \\
+\hline
+{\em col} & Column to test the move in \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if move creates a winning line, false otherwise
+\end{DoxyReturn}
+Temporarily places the piece, checks all winning patterns, then removes it to restore board state. \Hypertarget{class_four_in_row___board_a9c75246df4c0e6e0d1193f9de1113c9f}\index{FourInRow\_Board@{FourInRow\_Board}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!FourInRow\_Board@{FourInRow\_Board}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \label{class_four_in_row___board_a9c75246df4c0e6e0d1193f9de1113c9f} 
+bool Four\+In\+Row\+\_\+\+Board\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{move}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates board with a player\textquotesingle{}s move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em move} & Pointer to \doxylink{class_move}{Move} object containing column and symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if move was valid and executed, false otherwise
+\end{DoxyReturn}
+Implements Connect Four gravity\+: piece falls to lowest empty row in the selected column. 
+
+Implements \mbox{\hyperlink{class_board_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_four_in_row___board_8h}{Four\+In\+Row\+\_\+\+Board.\+h}}\end{DoxyCompactItemize}

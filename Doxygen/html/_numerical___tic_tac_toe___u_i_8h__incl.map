@@ -1,0 +1,20 @@
+<map id="Numerical_TicTacToe_UI.h" name="Numerical_TicTacToe_UI.h">
+<area shape="rect" id="Node000001" title="Header file for Numerical Tic&#45;Tac&#45;Toe User Interface." alt="" coords="258,5,438,32"/>
+<area shape="rect" id="Node000002" href="$_board_game___classes_8h.html" title=" " alt="" coords="96,80,253,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="319,35,220,76,218,71,317,30"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="255,155,326,181"/>
+<area shape="poly" id="edge6_Node000001_Node000005" title=" " alt="" coords="343,34,318,81,300,140,295,139,314,79,338,31"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="328,80,368,107"/>
+<area shape="poly" id="edge7_Node000001_Node000007" title=" " alt="" coords="351,33,351,64,345,64,345,33"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="392,80,451,107"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="363,31,400,67,396,71,359,34"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="475,80,528,107"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="376,30,462,70,459,75,374,35"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,155,59,181"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="151,110,72,150,69,145,149,105"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="83,155,141,181"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="166,109,135,145,131,141,162,105"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="196,105,259,144,256,148,193,109"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="164,155,230,181"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="181,106,191,139,186,141,176,108"/>
+</map>

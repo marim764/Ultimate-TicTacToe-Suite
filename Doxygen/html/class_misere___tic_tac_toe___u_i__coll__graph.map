@@ -1,0 +1,5 @@
+<map id="Misere_TicTacToe_UI" name="Misere_TicTacToe_UI">
+<area shape="rect" id="Node000001" title="Class handling the UI for Misère Tic&#45;Tac&#45;Toe. Inherits from UI&lt;char&gt; and provides methods for player cr..." alt="" coords="5,80,154,107"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html" title=" " alt="" coords="37,5,122,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,48,82,80,77,80,77,48"/>
+</map>

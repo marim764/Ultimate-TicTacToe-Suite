@@ -1,0 +1,5 @@
+<map id="Numerical_TicTacToe_Board" name="Numerical_TicTacToe_Board">
+<area shape="rect" id="Node000001" title="Represents a 3x3 board for Numerical Tic&#45;Tac&#45;Toe. Player 1 uses odd numbers, Player 2 uses even numbe..." alt="" coords="5,80,153,123"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="32,5,126,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="82,48,82,80,76,80,76,48"/>
+</map>

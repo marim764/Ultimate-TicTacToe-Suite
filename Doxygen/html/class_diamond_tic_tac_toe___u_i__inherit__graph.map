@@ -1,0 +1,5 @@
+<map id="DiamondTicTacToe_UI" name="DiamondTicTacToe_UI">
+<area shape="rect" id="Node000001" title="UI controller for Diamond Tic&#45;Tac&#45;Toe." alt="" coords="5,80,160,107"/>
+<area shape="rect" id="Node000002" href="$class_u_i.html" title=" " alt="" coords="40,5,125,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,48,85,80,80,80,80,48"/>
+</map>

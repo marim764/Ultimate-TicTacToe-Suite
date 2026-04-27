@@ -1,0 +1,5 @@
+<map id="FourInRow_Board" name="FourInRow_Board">
+<area shape="rect" id="Node000001" title="Implements Four In Row game logic on a 6x7 grid." alt="" coords="5,80,132,107"/>
+<area shape="rect" id="Node000002" href="$class_board.html" title=" " alt="" coords="16,5,121,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,48,71,80,66,80,66,48"/>
+</map>

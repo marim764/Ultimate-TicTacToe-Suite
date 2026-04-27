@@ -1,0 +1,28 @@
+\doxysection{Fivex\+Five\+\_\+\+Tic\+Tac\+Toe\+\_\+\+UI.\+h}
+\hypertarget{_fivex_five___tic_tac_toe___u_i_8h_source}{}\label{_fivex_five___tic_tac_toe___u_i_8h_source}\mbox{\hyperlink{_fivex_five___tic_tac_toe___u_i_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_board_game___classes_8h}{BoardGame\_Classes.h}}"{}}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{_fivex_five___tic_tac_toe___board_8h}{FivexFive\_TicTacToe\_Board.h}}"{}}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <limits>}}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00013\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_fivex_five___tic_tac_toe___u_i_a694670da24c32733bee139a6e1d54f48}{FivexFive\_TicTacToe\_UI}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_u_i_afb59b53f3c2ed750b1a9a0c7d6dc4a7a}{UI}}<char>\ \{}
+\DoxyCodeLine{00019\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00020\ \ \ \ \ \mbox{\hyperlink{class_fivex_five___tic_tac_toe___board}{FivexFive\_TicTacToe\_Board}}*\ \mbox{\hyperlink{class_fivex_five___tic_tac_toe___u_i_a088371c75aa8c5870a87734338d2ca1a}{boardPtr}};\ }
+\DoxyCodeLine{00021\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_fivex_five___tic_tac_toe___u_i_a694670da24c32733bee139a6e1d54f48}{FivexFive\_TicTacToe\_UI}}(\mbox{\hyperlink{class_fivex_five___tic_tac_toe___board}{FivexFive\_TicTacToe\_Board}}*\ b);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00036\ \ \ \ \ \mbox{\hyperlink{class_player}{Player<char>}}*\ \mbox{\hyperlink{class_fivex_five___tic_tac_toe___u_i_a29d15fdbbe17aa5f4e7beca49a1791c3}{create\_player}}(\textcolor{keywordtype}{string}\&\ name,\ \textcolor{keywordtype}{char}\ symbol,\ \mbox{\hyperlink{_board_game___classes_8h_abe590f3c9109f404f003d5d7e4f0fccf}{PlayerType}}\ type)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \mbox{\hyperlink{class_move}{Move<char>}}*\ \mbox{\hyperlink{class_fivex_five___tic_tac_toe___u_i_a47c25ae5314bc8764d089c6adef9f67e}{get\_move}}(\mbox{\hyperlink{class_player}{Player<char>}}*\ player)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_fivex_five___tic_tac_toe___u_i_a07f90e71cddfa9b3c9010f6a77ac4c67}{display\_board\_matrix}}(\textcolor{keyword}{const}\ vector<vector<char>>\&\ matrix)\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00050\ \};}
+
+\end{DoxyCode}

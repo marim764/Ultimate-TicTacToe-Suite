@@ -1,0 +1,369 @@
+\doxysection{Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board Class Reference}
+\hypertarget{class_ultimate_tic_tac_toe___board}{}\label{class_ultimate_tic_tac_toe___board}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+
+
+Represents the Ultimate Tic-\/\+Tac-\/\+Toe board with small boards tracking.  
+
+
+
+
+{\ttfamily \#include $<$Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board.\+h$>$}
+
+
+
+Inheritance diagram for Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_ultimate_tic_tac_toe___board__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_ultimate_tic_tac_toe___board__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_ultimate_tic_tac_toe___board_a5cd2d544fd6dda298564886d5246d526}{Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Constructor initializes a 9x9 board and empty main claims. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_ac830da9649878cc94639d026fab137a0}{update\+\_\+board}} (\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}m) override
+\begin{DoxyCompactList}\small\item\em Updates the board with a player\textquotesingle{}s move. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_a9f1ae0b4674825dab66b3ecbd681c508}{is\+\_\+win}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}p) override
+\begin{DoxyCompactList}\small\item\em Checks if the given player has won the game. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_a454df35b61aff3c84d85d0ee590e16b3}{is\+\_\+lose}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}) override
+\begin{DoxyCompactList}\small\item\em Checks if the player has lost. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_ad36ecf971d02d5f44dac6c61dd8f5dc9}{is\+\_\+draw}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}p) override
+\begin{DoxyCompactList}\small\item\em Checks if the game ended in a draw. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_ad39539f43fa245c300a051cff04f8173}{game\+\_\+is\+\_\+over}} (\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}p) override
+\begin{DoxyCompactList}\small\item\em Determines if the game is over. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_a626dcb94da4319ee856af41171f0b6a5}{get\+\_\+main\+\_\+claims}} () const
+\begin{DoxyCompactList}\small\item\em Returns a copy of the main 3x3 claims board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_board_ae5dfded241ee3644196e2f6074d1d0b1}{Board}} (int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}, int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}})
+\begin{DoxyCompactList}\small\item\em Construct a board with given dimensions. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_board_a138a6378af669dd1ce55dc11217aea48}{\texorpdfstring{$\sim$}{\string~}\+Board}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor. Frees allocated board memory. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_a117f2e61fdb7deccca333bbbc9c62d3a}{get\+\_\+board\+\_\+matrix}} () const
+\begin{DoxyCompactList}\small\item\em Return a copy of the current board as a 2D vector. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a93b130eff67bd4476fab27be8341cb78}{get\+\_\+rows}} () const
+\begin{DoxyCompactList}\small\item\em Get number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_ac665e1ed1f49125fab248e2c9ddfd608}{get\+\_\+columns}} () const
+\begin{DoxyCompactList}\small\item\em Get number of columns. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_board_a93558c58e60ca4291c6044828afd260b}{get\+\_\+cell}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Return content of cell x, y in current board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_abe7984ed21ca850abaabf4fb2ba8961b}{check\+\_\+small\+\_\+win}} (int br, int bc, char sym) const
+\begin{DoxyCompactList}\small\item\em Checks if a 3x3 small board is won by a player. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_a69b3c67d2a678ace59d84eb7bc3c2a87}{check\+\_\+main\+\_\+win}} (char sym) const
+\begin{DoxyCompactList}\small\item\em Checks if the main 3x3 board is won by a player. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+char \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_afc93e9cd0b415d3e96432bb4912fc047}{blank}} = \textquotesingle{}.\textquotesingle{}
+\begin{DoxyCompactList}\small\item\em Character for empty cells. \end{DoxyCompactList}\item 
+char \mbox{\hyperlink{class_ultimate_tic_tac_toe___board_a1530f0e8d663633a9e5435202162b52b}{main\+\_\+claims}} \mbox{[}3\mbox{]}\mbox{[}3\mbox{]}
+\begin{DoxyCompactList}\small\item\em Tracks the winner of each 3x3 small board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_board}{Board$<$ char $>$}}}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{class_board_a948d978e3b5fc460559b588f5dee9572}{rows}}
+\begin{DoxyCompactList}\small\item\em Number of rows. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_afaf8842d9d52ac724e8c2f5642ecafc7}{columns}}
+\begin{DoxyCompactList}\small\item\em Number of columns. \end{DoxyCompactList}\item 
+vector$<$ vector$<$ char $>$ $>$ \mbox{\hyperlink{class_board_af00c1fc363eb640ca276b8a572040040}{board}}
+\begin{DoxyCompactList}\small\item\em 2D vector for the board \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_board_a5952baefabced65fecec333de638408d}{n\+\_\+moves}}
+\begin{DoxyCompactList}\small\item\em Number of moves made. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the Ultimate Tic-\/\+Tac-\/\+Toe board with small boards tracking. 
+
+\label{doc-constructors}
+\Hypertarget{class_ultimate_tic_tac_toe___board_doc-constructors}
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_ultimate_tic_tac_toe___board_a5cd2d544fd6dda298564886d5246d526}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{UltimateTicTacToe\_Board()}{UltimateTicTacToe\_Board()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_a5cd2d544fd6dda298564886d5246d526} 
+Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::\+Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Constructor initializes a 9x9 board and empty main claims. 
+
+Constructor for Ultimate Tic-\/\+Tac-\/\+Toe board.
+
+Initializes a 9x9 board with \textquotesingle{}.\textquotesingle{} and 3x3 main claims with \textquotesingle{}.\textquotesingle{}. 
+
+\label{doc-func-members}
+\Hypertarget{class_ultimate_tic_tac_toe___board_doc-func-members}
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_ultimate_tic_tac_toe___board_a69b3c67d2a678ace59d84eb7bc3c2a87}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!check\_main\_win@{check\_main\_win}}
+\index{check\_main\_win@{check\_main\_win}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{check\_main\_win()}{check\_main\_win()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_a69b3c67d2a678ace59d84eb7bc3c2a87} 
+bool Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::check\+\_\+main\+\_\+win (\begin{DoxyParamCaption}\item[{char}]{sym}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checks if the main 3x3 board is won by a player. 
+
+Checks if a player has won the main 3x3 board.
+
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \doxylink{class_player}{Player}\textquotesingle{}s symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the main board is won
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em sym} & \doxylink{class_player}{Player}\textquotesingle{}s symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if player won the main board, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_ultimate_tic_tac_toe___board_abe7984ed21ca850abaabf4fb2ba8961b}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!check\_small\_win@{check\_small\_win}}
+\index{check\_small\_win@{check\_small\_win}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{check\_small\_win()}{check\_small\_win()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_abe7984ed21ca850abaabf4fb2ba8961b} 
+bool Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::check\+\_\+small\+\_\+win (\begin{DoxyParamCaption}\item[{int}]{br}{, }\item[{int}]{bc}{, }\item[{char}]{sym}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checks if a 3x3 small board is won by a player. 
+
+Checks if a 3x3 small board is won by the given symbol.
+
+
+\begin{DoxyParams}{Parameters}
+{\em br} & Row index of small board (0-\/2) \\
+\hline
+{\em bc} & Column index of small board (0-\/2) \\
+\hline
+{\em sym} & \doxylink{class_player}{Player}\textquotesingle{}s symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the small board is won
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em br} & Small board row index (0-\/2) \\
+\hline
+{\em bc} & Small board column index (0-\/2) \\
+\hline
+{\em sym} & \doxylink{class_player}{Player}\textquotesingle{}s symbol \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the small board is won, false otherwise 
+\end{DoxyReturn}
+\Hypertarget{class_ultimate_tic_tac_toe___board_ad39539f43fa245c300a051cff04f8173}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!game\_is\_over@{game\_is\_over}}
+\index{game\_is\_over@{game\_is\_over}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{game\_is\_over()}{game\_is\_over()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_ad39539f43fa245c300a051cff04f8173} 
+bool Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::game\+\_\+is\+\_\+over (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Determines if the game is over. 
+
+Determines whether the game is over.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if win or draw
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if game is won or drawn 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ae0e4575ec3cc4b6eb9f367ffb2beed13}{Board$<$ char $>$}}.
+
+\Hypertarget{class_ultimate_tic_tac_toe___board_a626dcb94da4319ee856af41171f0b6a5}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!get\_main\_claims@{get\_main\_claims}}
+\index{get\_main\_claims@{get\_main\_claims}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{get\_main\_claims()}{get\_main\_claims()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_a626dcb94da4319ee856af41171f0b6a5} 
+vector$<$ vector$<$ char $>$ $>$ Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::get\+\_\+main\+\_\+claims (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Returns a copy of the main 3x3 claims board. 
+
+Returns a copy of the 3x3 main claims board.
+
+\begin{DoxyReturn}{Returns}
+3x3 vector representing the winner of each small board
+
+3x3 vector representing the state of small boards 
+\end{DoxyReturn}
+\Hypertarget{class_ultimate_tic_tac_toe___board_ad36ecf971d02d5f44dac6c61dd8f5dc9}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!is\_draw@{is\_draw}}
+\index{is\_draw@{is\_draw}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_draw()}{is\_draw()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_ad36ecf971d02d5f44dac6c61dd8f5dc9} 
+bool Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+draw (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the game ended in a draw. 
+
+Checks if the game has ended in a draw.
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if board is full and no winner
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if all 81 cells are filled and no one won 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a8dbe2a243881986f3e53b45799d377fc}{Board$<$ char $>$}}.
+
+\Hypertarget{class_ultimate_tic_tac_toe___board_a454df35b61aff3c84d85d0ee590e16b3}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!is\_lose@{is\_lose}}
+\index{is\_lose@{is\_lose}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_lose()}{is\_lose()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_a454df35b61aff3c84d85d0ee590e16b3} 
+bool Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+lose (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the player has lost. 
+
+\begin{DoxyReturn}{Returns}
+Always false (not implemented) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a207d5f6feb77f81c51d1462f0245890d}{Board$<$ char $>$}}.
+
+\Hypertarget{class_ultimate_tic_tac_toe___board_a9f1ae0b4674825dab66b3ecbd681c508}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!is\_win@{is\_win}}
+\index{is\_win@{is\_win}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{is\_win()}{is\_win()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_a9f1ae0b4674825dab66b3ecbd681c508} 
+bool Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::is\+\_\+win (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_player}{Player}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{p}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the given player has won the game. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the player won
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em p} & Pointer to the player \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if player won the main board, false otherwise 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_ab316fe3e79677b4617fc3d90d6c48f33}{Board$<$ char $>$}}.
+
+\Hypertarget{class_ultimate_tic_tac_toe___board_ac830da9649878cc94639d026fab137a0}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!update\_board@{update\_board}}
+\index{update\_board@{update\_board}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{update\_board()}{update\_board()}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_ac830da9649878cc94639d026fab137a0} 
+bool Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::update\+\_\+board (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_move}{Move}}$<$ char $>$ \texorpdfstring{$\ast$}{*}}]{m}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the board with a player\textquotesingle{}s move. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to the move object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if move applied successfully, false otherwise
+\end{DoxyReturn}
+Checks if the small board is not already claimed and the cell is empty. Marks the cell and updates main claim if small board is won.
+
+
+\begin{DoxyParams}{Parameters}
+{\em m} & Pointer to the move object. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the move was applied successfully, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_board_a93d9dec601dda58b7e206ccb47633e57}{Board$<$ char $>$}}.
+
+
+
+\label{doc-variable-members}
+\Hypertarget{class_ultimate_tic_tac_toe___board_doc-variable-members}
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_ultimate_tic_tac_toe___board_afc93e9cd0b415d3e96432bb4912fc047}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!blank@{blank}}
+\index{blank@{blank}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{blank}{blank}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_afc93e9cd0b415d3e96432bb4912fc047} 
+char Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::blank = \textquotesingle{}.\textquotesingle{}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Character for empty cells. 
+
+\Hypertarget{class_ultimate_tic_tac_toe___board_a1530f0e8d663633a9e5435202162b52b}\index{UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}!main\_claims@{main\_claims}}
+\index{main\_claims@{main\_claims}!UltimateTicTacToe\_Board@{UltimateTicTacToe\_Board}}
+\doxysubsubsection{\texorpdfstring{main\_claims}{main\_claims}}
+{\footnotesize\ttfamily \label{class_ultimate_tic_tac_toe___board_a1530f0e8d663633a9e5435202162b52b} 
+char Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board\+::main\+\_\+claims\mbox{[}3\mbox{]}\mbox{[}3\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Tracks the winner of each 3x3 small board. 
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_ultimate_tic_tac_toe___board_8h}{Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board.\+h}}\item 
+\mbox{\hyperlink{_ultimate_tic_tac_toe___board_8cpp}{Ultimate\+Tic\+Tac\+Toe\+\_\+\+Board.\+cpp}}\end{DoxyCompactItemize}
