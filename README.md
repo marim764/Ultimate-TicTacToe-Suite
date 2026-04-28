@@ -1,6 +1,6 @@
 # Ultimate-TicTacToe-Suite
 A massive C++ game engine featuring **13 unique variations of Tic-Tac-Toe and logic board games**. 
-This project is a comprehensive implementation of **Object-Oriented Programming (OOP)**, showcasing advanced class hierarchies, polymorphism, and modular design.
+This project is a comprehensive implementation of **Object-Oriented Programming (OOP)**, showcasing advanced class hierarchies, polymorphism, and modular design. I used Doxygen to convert in-code comments into professional and organized documentation.
 
 # 🕹️ Integrated Games Menu
 
